@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="video-style.css">
+    <link rel="stylesheet" href="global-style.css">
+    <link rel="stylesheet" href="sidebar-style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
+
+    
+
+    <title>YouTube Clone</title>
+</head>
+<body id="theBod">
+    <header class="header-flex">
+        <div class="left-section">
+            <div id="hamburger-div">
+                <img src="/icons/hamburger-menu.svg" class="hamburger-icon">
+            </div>
+            
+            <img src="/icons/youtube-logo.svg" class="youtube-logo">
+        </div>
+
+        <div class="middle-section">
+            <input type="text" placeholder="Search" class="search-bar">
+            <button class="magnifying-glass">
+                <img src="/icons/search.svg">
+                <!-- Put position absolute inside position relative for tooltip styling -->
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img src="icons/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+        </div>
+
+        <div class="right-section">
+            <div class="upload-container">
+                <img src="/icons/upload.svg" class="upload">
+                <div class="tooltip">Create</div>
+            </div>
+            <div class="apps-container">
+                <img src="/icons/youtube-apps.svg" class="apps">
+                <div class="tooltip">YouTube apps</div>
+            </div>
+            <div class="notification-container">
+                <div class="notification-counter">3</div>
+                <img src="/icons/notifications.svg" class="notifications">
+                <div class="tooltip">Notifications</div>
+            </div>
+            <div class="profile-pic-container"><img src="/profile-pictures/47200F9B-135E-4988-AF03-A9529670250B_1_201_a.jpeg" class="my-picture"></div>
+            
+        </div>
+    </header>
+
+    <nav class="sidebar">
+        <div class="flex-nav-container-1">
+            <div class="home-icon sidebar-link" >
+                <img src="/icons/home.svg" >
+                <div>Home</div>
+            </div>
+            <div class="explore-icon sidebar-link">
+                <img src="/icons/explore.svg" >
+                <div>Explore</div>
+            </div>
+            <div class="subscriptions-icon sidebar-link">
+                <img src="/icons/subscriptions.svg" >
+                <div>Subscriptions</div>
+            </div>
+        </div>
+        <div class="flex-nav-container-2">
+            <div class="originals-icon sidebar-link">
+                <img src="/icons/originals.svg" >
+                <div>Originals</div>
+            </div>
+            <div class="music-icon sidebar-link">
+                <img src="/icons/youtube-music.svg" >
+                <div>YouTube Music</div>
+            </div>
+            <div class="library-icon sidebar-link">
+                <img src="/icons/library.svg" >
+                <div>Library</div>
+            </div>
+        </div>
+        <div class="flex-nav-container-3">
+            <p class="subscripty subscriptions-section-no-display">SUBSCRIPTIONS</p>
+            <a href="https://www.youtube.com/c/Gdconf">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-1.jpeg" >
+                    <div class="subscription-author">GDC</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/c/ReasonStudios">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-2.jpeg" >
+                    <div class="subscription-author">Reason Studios</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/kepowob">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-3.jpeg" >
+                    <div class="subscription-author">Kevin Powell</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/user/anjwht">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-4 (1).jpeg" >
+                    <div class="subscription-author">Andrew White</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/c/Brackeys">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-5.jpeg" >
+                    <div class="subscription-author">Brackeys</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/c/PogoMusic">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-6.jpeg" >
+                    <div class="subscription-author">Pogo</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/c/OrpheusAudioAcademy">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-7.jpeg" >
+                    <div class="subscription-author">Orpheus Audio Academy</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/c/bibleproject">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-9.jpeg" >
+                    <div class="subscription-author">BibleProject</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/c/EverythingSmartHome">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-10.jpeg" >
+                    <div class="subscription-author">Everything Smart Home</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/channel/UCZMF14eNxvuReRTceX_mbqQ">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-11.jpeg" >
+                    <div class="subscription-author">The Game Overanalyzer</div>
+                </div>
+            </a>
+            <a href="https://www.youtube.com/c/CSDojo">
+                <div class="subscriptions-section-no-display sidebar-link">
+                    <img src="/profile-pictures/channel-12.jpeg" >
+                    <div class="subscription-author">CS Dojo</div>
+                </div>
+            </a>
+        </div>
+        
+    </nav>
+    
+    <main>
+        <div class="video-grid">
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=g5f7yixtQPc">
+                        <img src="thumbnails/thumbnail-1.webp" class="thumbnail">
+                        <div class="video-time">31:41</div>
+                    </a>
+                    
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/Gdconf">
+                            <img src="profile-pictures/channel-1.jpeg">
+                        </a>
+                        
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=g5f7yixtQPc">
+                            <p class="video-title">No Time, No Budget, No Problem: Finishing The First Tree</p>
+                        </a>
+                        <a href="https://www.youtube.com/watch?v=g5f7yixtQPc">
+                            <p class="video-author">GDC</p>
+                        </a>
+                        
+                        <p class="video-stats">435K views &#183; 2 years ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=vUz3WEUJuQs&list=PL29263D87CD4601CD">
+                        <img src="thumbnails/thumbnail-2.webp" class="thumbnail">
+                        <div class="video-time">10:18</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/ReasonStudios">
+                            <img src="profile-pictures/channel-2.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=vUz3WEUJuQs&list=PL29263D87CD4601CD">
+                            <p class="video-title">Friktion Modeled Strings: Getting Started in the Reason Rack</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/ReasonStudios">
+                            <p class="video-author">Reason Studios</p>
+                        </a>
+                        <p class="video-stats">59K views &#183; 2 years ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=lvKK2fs6h4I">
+                        <img src="thumbnails/thumbnail-3.webp" class="thumbnail">
+                        <div class="video-time">13:57</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                        <div  class="channel-picture">
+                        <a href="https://www.youtube.com/kepowob">
+                            <img src="profile-pictures/channel-3.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=lvKK2fs6h4I">
+                            <p class="video-title">Create custom scrollbars using CSS</p>
+                        </a>
+                        <a href="https://www.youtube.com/kepowob">
+                            <p class="video-author">Kevin Powell</p>
+                        </a>
+                        <p class="video-stats">126K views &#183; 1 year ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=R1lfEDbNo4E">
+                        <img src="thumbnails/thumbnail-4.webp" class="thumbnail">
+                        <div class="video-time">4:30</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/user/anjwht">
+                            <img src="profile-pictures/channel-4 (1).jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=R1lfEDbNo4E">
+                            <p class="video-title">Bat For Lashes - Laura (Cover)</p>
+                        </a>
+                        <a href="https://www.youtube.com/user/anjwht">
+                            <p class="video-author">Andrew White</p>
+                        </a>
+                        <p class="video-stats">30K views &#183; 10 years ago</p>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=j48LtUkZRjU">
+                        <img src="thumbnails/thumbnail-5.webp" class="thumbnail">
+                        <div class="video-time">3:20</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/Brackeys">
+                            <img src="profile-pictures/channel-5.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=j48LtUkZRjU">
+                            <p class="video-title">How to make a Video Game - Getting Started</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/Brackeys">
+                            <p class="video-author">Brackeys</p>
+                        </a>
+                        <p class="video-stats">6.6M views &#183; 5 years ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=bl5TUw7sUBs">
+                        <img src="thumbnails/thumbnail-6.webp" class="thumbnail">
+                        <div class="video-time">3:16</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/PogoMusic">
+                            <img src="profile-pictures/channel-6.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=bl5TUw7sUBs">
+                            <p class="video-title">Data & Picard</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/PogoMusic">
+                            <p class="video-author">Pogo</p>
+                        </a>
+                        <p class="video-stats">10M views &#183; 5 years ago</p>
+                    </div>
+                </div> 
+            </div>
+    
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=7IDsMcl1wPE">
+                        <img src="thumbnails/thumbnail-7.webp" class="thumbnail">
+                        <div class="video-time">39:35</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/OrpheusAudioAcademy">
+                            <img src="profile-pictures/channel-7.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=7IDsMcl1wPE">
+                            <p class="video-title">How To Make Vaporwave Music (Step-by-Step)</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/OrpheusAudioAcademy">
+                            <p class="video-author">Orpheus Audio Academy</p>
+                        </a>
+                        <p class="video-stats">1.7K views &#183; 1 month ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=k1b9xKRC74E">
+                        <img src="thumbnails/thumbnail-8.webp" class="thumbnail">
+                        <div class="video-time">59:24</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/Gdconf">
+                            <img src="profile-pictures/channel-8.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=k1b9xKRC74E">
+                            <p class="video-title">The Sound and Music of Hyper Light Drifter</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/Gdconf">
+                            <p class="video-author">GDC</p>
+                        </a>
+                        <p class="video-stats">41K views &#183; 5 years ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=7_CGP-12AE0">
+                        <img src="thumbnails/thumbnail-9.webp" class="thumbnail">
+                        <div class="video-time">5:37</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/bibleproject">
+                            <img src="profile-pictures/channel-9.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=7_CGP-12AE0">
+                            <p class="video-title">The Story of the Bible</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/bibleproject">
+                            <p class="video-author">BibleProject</p>
+                        </a>
+                        <p class="video-stats">2.7M views &#183; 5 years ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=Oxg6rzZo-Pg">
+                        <img src="thumbnails/thumbnail-10.webp" class="thumbnail">
+                        <div class="video-time">10:48</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/EverythingSmartHome">
+                            <img src="profile-pictures/channel-10.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=Oxg6rzZo-Pg">
+                            <p class="video-title">6 ESSENTIAL Beginner's Tips After Installing Home Assistant</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/EverythingSmartHome">
+                            <p class="video-author">Everything Smart Home</p>
+                        </a>
+                        <p class="video-stats">95K views &#183; 1 year ago</p>
+                    </div>
+                </div> 
+            </div>
+            
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=hCOHjTX4GYE">
+                        <img src="thumbnails/thumbnail-11.webp" class="thumbnail">
+                        <div class="video-time">21:16</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/channel/UCZMF14eNxvuReRTceX_mbqQ">
+                            <img src="profile-pictures/channel-11.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=hCOHjTX4GYE">
+                            <p class="video-title">The Art of Puzzle Design | How Game Designers Explore Ideas and Themes with Puzzles and Problems</p>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCZMF14eNxvuReRTceX_mbqQ">
+                            <p class="video-author">The Game Overanalyzer</p>
+                        </a>    
+                        <p class="video-stats">22K views &#183; 2 years ago</p>
+                    </div>
+                </div> 
+            </div>
+        
+        
+            <div class="video-preview">
+                <div class="video-row">
+                    <a href="https://www.youtube.com/watch?v=GBuHSRDGZBY">
+                        <img src="thumbnails/thumbnail-12.webp" class="thumbnail">
+                        <div class="video-time">19:12</div>
+                    </a>
+                </div>
+                <div class="video-info-grid">
+                    <div  class="channel-picture">
+                        <a href="https://www.youtube.com/c/CSDojo">
+                            <img src="profile-pictures/channel-12.jpeg">
+                        </a>
+                    </div>
+                    <div  class="video-info">
+                        <a href="https://www.youtube.com/watch?v=GBuHSRDGZBY">
+                            <p class="video-title">5 Problem Solving Tips for Cracking Coding Interview Questions</p>
+                        </a>
+                        <a href="https://www.youtube.com/c/CSDojo">
+                            <p class="video-author">CS Dojo</p>
+                        </a>
+                        <p class="video-stats">1.2M views &#183; 3 years ago</p>
+                    </div>
+                </div> 
+            </div>
+
+        </div>
+    </main>
+</body>
+</html>
+
+<script src="myscripts.js"></script>

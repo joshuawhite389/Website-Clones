@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 102px;
+    padding-right: 30px;
+    font-family: Roboto, arial;
+    background-color: rgb(247, 247, 247);
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.expanded-sidebar-body {
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 330px;
+    padding-right: 30px;
+    font-family: Roboto, arial;
+    background-color: rgb(247, 247, 247);
+}
