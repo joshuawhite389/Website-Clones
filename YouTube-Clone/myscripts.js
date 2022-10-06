@@ -4,6 +4,8 @@ const sidebar = document.querySelector('.sidebar');
 const theBody = document.querySelector('#theBod');
 const subscriptionSection = document.querySelectorAll('.subscriptions-section-no-display');
 const navBarArea = document.querySelector('nav');
+const searchBar = document.querySelector('.search-bar');
+const searchButton = document.querySelector('.magnifying-glass');
 
 let hamburgerClicked = false;
 
@@ -52,8 +54,25 @@ function removeScroll() {
     sidebar.classList.add('hide-scroll');
 }
 
+
+//make this search titles and authors
+function handleSearch(e) {
+    e.preventDefault();
+    if (e.keyCode === 13) {
+        searchButton.click();
+    }
+    
+}
+
+function handleButtonClick(e) {
+    alert(`Well, this isn't actually YouTube, so I can't search ${searchBar.value}`);
+    searchBar.value = '';
+    
+}
+
 hamburger.addEventListener('click', expandHamburger);
 navBarArea.addEventListener('mouseover', addScroll);
 navBarArea.addEventListener('mouseout', removeScroll);
-
+searchBar.addEventListener('keyup', handleSearch);
+searchButton.addEventListener('click', handleButtonClick);
 
