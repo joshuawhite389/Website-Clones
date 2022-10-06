@@ -3,6 +3,7 @@ const allDivsInNav = document.querySelectorAll('.sidebar-link');
 const sidebar = document.querySelector('.sidebar');
 const theBody = document.querySelector('#theBod');
 const subscriptionSection = document.querySelectorAll('.subscriptions-section-no-display');
+const navBarArea = document.querySelector('nav');
 
 let hamburgerClicked = false;
 
@@ -43,4 +44,17 @@ function expandHamburger(){
     hamburgerClicked = !hamburgerClicked;
 }
 
+function addScroll() {
+    sidebar.classList.remove('hide-scroll');
+    console.log('yes')
+}
+
+function removeScroll() {
+    sidebar.classList.add('hide-scroll');
+}
+
 hamburger.addEventListener('click', expandHamburger);
+navBarArea.addEventListener('mouseover', addScroll);
+navBarArea.addEventListener('mouseout', removeScroll);
+
+
