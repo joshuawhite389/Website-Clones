@@ -181,6 +181,10 @@ input:focus {
 }
 
 .voice-search-button:focus {
+    /* background-color: rgb(244, 244, 244); */
+}
+
+.voice-search-button:active {
     background-color: rgb(244, 244, 244);
 }
 

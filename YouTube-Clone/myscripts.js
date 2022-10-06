@@ -46,7 +46,6 @@ function expandHamburger(){
 
 function addScroll() {
     sidebar.classList.remove('hide-scroll');
-    console.log('yes')
 }
 
 function removeScroll() {

@@ -23,6 +23,8 @@
     }
 } */
 
+
+
 .thumbnail {
     width: 100%;
 }
@@ -46,6 +48,18 @@
 .video-row {
     position: relative;
 }
+
+.video-row:hover .the-time {
+    display: none
+  }
+
+.video-row .the-hover {
+    display: none
+  }
+
+.video-row:hover .the-hover {
+   display:unset;
+  }
 
 .video-info-grid {
     display: grid;
