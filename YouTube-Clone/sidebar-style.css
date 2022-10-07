@@ -94,21 +94,6 @@
     display: none;
 }
 
-/* .flex-nav-container-3 div {
-    height: 30px;
-    width: 30px;
-}
-
-.flex-nav-container-3 img {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    padding: 31px;
-    margin-top: 18px;
-} 
-*/
 .subscription-author {
     justify-content: center;
     align-items: center;

@@ -20,7 +20,6 @@ function expandHamburger(){
             div.classList.add('sidebar-link'); 
         }
     });
-
     subscriptionSection.forEach(div => {
         if (!hamburgerClicked) {
             div.classList.remove('subscriptions-section-no-display');
@@ -29,7 +28,6 @@ function expandHamburger(){
             div.classList.add('subscriptions-section-no-display'); 
         }
     })
-
     if (!hamburgerClicked) {
         sidebar.classList.add('expanded-sidebar');
         sidebar.classList.remove('sidebar');
@@ -39,10 +37,7 @@ function expandHamburger(){
         sidebar.classList.remove('expanded-sidebar');
         sidebar.classList.add('sidebar');
         theBody.classList.remove('expanded-sidebar-body');
-    }
-    
-
-    
+    }    
     hamburgerClicked = !hamburgerClicked;
 }
 
@@ -54,20 +49,16 @@ function removeScroll() {
     sidebar.classList.add('hide-scroll');
 }
 
-
-//make this search titles and authors
 function handleSearch(e) {
     e.preventDefault();
     if (e.keyCode === 13) {
+        searchBar.value = '';
         searchButton.click();
-    }
-    
+    }   
 }
 
 function handleButtonClick(e) {
-    alert(`Well, this isn't actually YouTube, so I can't search ${searchBar.value}`);
     searchBar.value = '';
-    
 }
 
 hamburger.addEventListener('click', expandHamburger);
@@ -75,4 +66,5 @@ navBarArea.addEventListener('mouseover', addScroll);
 navBarArea.addEventListener('mouseout', removeScroll);
 searchBar.addEventListener('keyup', handleSearch);
 searchButton.addEventListener('click', handleButtonClick);
+
 

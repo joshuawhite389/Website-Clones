@@ -25,15 +25,6 @@
     cursor: pointer;
 }
 
-/* #hamburger-div {
-    background-color: none;
-    transition: background-color 0.15s;
-    -webkit-transition: background-color 0.15s;
-    -moz-transition: background-color 0.15s;
-    -ms-transition: background-color 0.15s;
-    -o-transition: background-color 0.15s;
-} */
-
 #hamburger-div:active {
     height: 36px;
     width: 40px;
